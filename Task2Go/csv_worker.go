@@ -45,14 +45,3 @@ func (c *CsvWorker) Write(data []Data) {
 	}
 	log.Println("Данные успешно записаны в файл data.csv")
 }
-
-func arrayToString(arr []string) string {
-	str := ""
-	for i, v := range arr {
-		str += v
-		if i < len(arr)-1 {
-			str += ", "
-		}
-	}
-	return str
-}
